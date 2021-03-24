@@ -139,18 +139,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                development-policy-area:NPP3            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2021-01-08            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Molins, South Saunderton            </dd>
@@ -161,15 +149,16 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BUC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BUC)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">entry-date
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                2021-01-08            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/e936b1eca6f85c2e40b830e16b7f799901d0fa87a6631d529c0946696138931f.csv" class="govuk-link">e936b1eca6f85c2e4...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -187,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>geography</th>
+                <th>geometry</th>
+                <th>organisation</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2021-01-08</td>
+                <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/e936b1eca6f85c2e40b830e16b7f799901d0fa87a6631d529c0946696138931f.csv#L7">e936b1eca6f8...</a></td>
+                <td>6</td>
+                    <td>development-policy-area:NPP3</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.833818 51.677343,-0.835599 51.679656,-0.835608 51.679683,-0.835308 51.679784,-0.835600 51.680164,-0.835367 51.680279,-0.835346 51.680373,-0.834426 51.680720,-0.834261 51.680625,-0.834090 51.680693,-0.833993 51.680609,-0.833391 51.680848,-0.833258 51.680737,-0.832614 51.680996,-0.832434 51.680817,-0.832496 51.680792,-0.832069 51.680372,-0.832320 51.680273,-0.832195 51.680056,-0.831527 51.679400,-0.831731 51.679302,-0.831135 51.678689,-0.831049 51.678717,-0.831007 51.678677,-0.833257 51.677838,-0.833345 51.677867,-0.833456 51.677976,-0.833423 51.678022,-0.834322 51.678901,-0.834490 51.678864,-0.834323 51.678677,-0.834445 51.678640,-0.834584 51.678828,-0.834632 51.678811,-0.834617 51.678701,-0.834567 51.678649,-0.833987 51.678198,-0.833594 51.677752,-0.833727 51.677675,-0.833541 51.677438,-0.833818 51.677343)))
+  </div>
+</details>
+                    </td>
+                    <td>local-authority-eng:BUC</td> 
+                    <td>Molins, South Saunderton</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -280,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

@@ -135,41 +135,30 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-area/local-authority-eng/BUC/LPEMC</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                development-policy-area:LPEMC            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2021-01-08            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Cores End Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BUC" class="govuk-link">Buckinghamshire Council</a>
 <span title="Organisation identifier: local-authority-eng:BUC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BUC)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                Cores End Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                development-policy-area:LPEMC            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2021-01-08            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/6b2628128c516c2e07fc1f45d1794055985a4257dfbfca234bcd4846a2eddc0d.csv" class="govuk-link">6b2628128c516c2e0...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -187,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>geography</th>
+                <th>geometry</th>
+                <th>organisation</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2021-01-08</td>
+                <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/6b2628128c516c2e07fc1f45d1794055985a4257dfbfca234bcd4846a2eddc0d.csv#L13">6b2628128c51...</a></td>
+                <td>12</td>
+                    <td>development-policy-area:LPEMC</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.709937 51.578266,-0.709777 51.577867,-0.708663 51.578232,-0.706546 51.578144,-0.706437 51.578040,-0.706509 51.577976,-0.706627 51.578026,-0.708991 51.576941,-0.709019 51.576933,-0.709237 51.577344,-0.709470 51.577263,-0.709334 51.577041,-0.709386 51.577003,-0.709459 51.576982,-0.709499 51.577046,-0.710095 51.576913,-0.710205 51.577217,-0.710008 51.577281,-0.710362 51.578186,-0.709937 51.578266)))
+  </div>
+</details>
+                    </td>
+                    <td>local-authority-eng:BUC</td> 
+                    <td>Cores End Road</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -280,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

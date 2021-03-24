@@ -135,25 +135,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-area/local-authority-eng/BUC/LPMOL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                development-policy-area:LPMOL            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2021-01-08            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Molins Sports Ground            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                development-policy-area:LPMOL            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -161,15 +149,16 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BUC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BUC)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">entry-date
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                2021-01-08            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/39c10fd7bd3348291170173c9a0c783a0108678613ccf51b1088d3ed0f932306.csv" class="govuk-link">39c10fd7bd3348291...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -187,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>geography</th>
+                <th>geometry</th>
+                <th>organisation</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2021-01-08</td>
+                <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/39c10fd7bd3348291170173c9a0c783a0108678613ccf51b1088d3ed0f932306.csv#L2">39c10fd7bd33...</a></td>
+                <td>1</td>
+                    <td>development-policy-area:LPMOL</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.826083 51.736478,-0.823834 51.735715,-0.824034 51.735625,-0.824288 51.735590,-0.824656 51.735379,-0.825257 51.735274,-0.825613 51.735078,-0.826228 51.734412,-0.826413 51.734074,-0.826467 51.733885,-0.826571 51.733891,-0.826362 51.734297,-0.828834 51.735072,-0.828230 51.735865,-0.826083 51.736478)))
+  </div>
+</details>
+                    </td>
+                    <td>local-authority-eng:BUC</td> 
+                    <td>Molins Sports Ground</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -280,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>
