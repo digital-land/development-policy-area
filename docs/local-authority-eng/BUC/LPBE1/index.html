@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">development-policy-area</span>
     <h1 class="govuk-heading-xl">Slate Meadow</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-area/local-authority-eng/BUC/LPBE1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,29 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-01-08</td>
-                <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/440c5c1392fda63f7c274768359741151560c2b696f1a38a3083cc7dca435958.csv#L15">440c5c1392fd...</a></td>
-                <td>14</td>
-                    <td>development-policy-area:LPBE1</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-01-08</td>
+            <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/440c5c1392fda63f7c274768359741151560c2b696f1a38a3083cc7dca435958.csv#L15">440c5c1392fd...</a></td>
+            <td>14</td>
+                <td>Slate Meadow</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -208,13 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.701897 51.579808,-0.701937 51.579826,-0.697148 51.581413,-0.695101 51.579993,-0.693957 51.579044,-0.694803 51.578702,-0.696432 51.578189,-0.696702 51.578132,-0.697324 51.578079,-0.697524 51.578257,-0.697532 51.578347,-0.697677 51.578373,-0.697866 51.578483,-0.698350 51.578826,-0.698538 51.578741,-0.698850 51.578865,-0.698841 51.578890,-0.699563 51.579232,-0.699603 51.579256,-0.699569 51.579296,-0.699699 51.579355,-0.699785 51.579343,-0.699874 51.579266,-0.699935 51.579290,-0.700072 51.579156,-0.700914 51.579169,-0.701031 51.579479,-0.701375 51.579402,-0.701469 51.579632,-0.701897 51.579808)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:BUC</td> 
-                    <td>Slate Meadow</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BUC</td> 
+                <td>development-policy-area:LPBE1</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

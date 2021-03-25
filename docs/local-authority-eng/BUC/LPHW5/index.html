@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">development-policy-area</span>
     <h1 class="govuk-heading-xl">Abbey Barn South and Wycombe Summit</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-area/local-authority-eng/BUC/LPHW5</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BUC" class="govuk-link">Buckinghamshire Council</a>
-<span title="Organisation identifier: local-authority-eng:BUC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BUC)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                development-policy-area:LPHW5            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Abbey Barn South and Wycombe Summit            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BUC" class="govuk-link">Buckinghamshire Council</a>
+<span title="Organisation identifier: local-authority-eng:BUC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BUC)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,29 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-01-08</td>
-                <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/440c5c1392fda63f7c274768359741151560c2b696f1a38a3083cc7dca435958.csv#L3">440c5c1392fd...</a></td>
-                <td>2</td>
-                    <td>development-policy-area:LPHW5</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-01-08</td>
+            <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/440c5c1392fda63f7c274768359741151560c2b696f1a38a3083cc7dca435958.csv#L3">440c5c1392fd...</a></td>
+            <td>2</td>
+                <td>Abbey Barn South and Wycombe Summit</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -208,13 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.742693 51.613496,-0.743353 51.613734,-0.744097 51.613947,-0.745916 51.614375,-0.745366 51.614691,-0.745081 51.614910,-0.744482 51.615292,-0.744255 51.615480,-0.743969 51.615795,-0.743731 51.616397,-0.743620 51.616569,-0.741989 51.615740,-0.739258 51.617776,-0.738686 51.617515,-0.738102 51.617378,-0.737926 51.617283,-0.737879 51.617224,-0.737848 51.617298,-0.737864 51.617344,-0.737673 51.617422,-0.736985 51.616001,-0.736883 51.615477,-0.736819 51.615395,-0.736669 51.614947,-0.736615 51.614905,-0.736099 51.614766,-0.735098 51.614569,-0.734607 51.614412,-0.734126 51.614160,-0.733731 51.614194,-0.732469 51.613673,-0.732338 51.613680,-0.732159 51.613804,-0.731580 51.613648,-0.731444 51.613535,-0.731267 51.613452,-0.729932 51.613143,-0.730770 51.612899,-0.731220 51.612818,-0.732112 51.612406,-0.733423 51.611903,-0.734747 51.611737,-0.735483 51.611605,-0.735897 51.611479,-0.736284 51.611307,-0.738080 51.611746,-0.739066 51.612041,-0.740292 51.612475,-0.742693 51.613496)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:BUC</td> 
-                    <td>Abbey Barn South and Wycombe Summit</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BUC</td> 
+                <td>development-policy-area:LPHW5</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

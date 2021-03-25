@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">development-policy-area</span>
     <h1 class="govuk-heading-xl">Valley Business Centre</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-area/local-authority-eng/BUC/LPVBC</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,29 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-01-08</td>
-                <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/1b482d0f57d12f6b3d1e77b040cb28bd47cde5768441422260b4aa6d8812be20.csv#L6">1b482d0f57d1...</a></td>
-                <td>5</td>
-                    <td>development-policy-area:LPVBC</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>organisation</th>
+            <th>geometry</th>
+            <th>geography</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-01-08</td>
+            <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/1b482d0f57d12f6b3d1e77b040cb28bd47cde5768441422260b4aa6d8812be20.csv#L6">1b482d0f57d1...</a></td>
+            <td>5</td>
+                <td>local-authority-eng:BUC</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -208,13 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.740487 51.628309,-0.740508 51.628371,-0.740078 51.629260,-0.739250 51.629101,-0.739219 51.629164,-0.738792 51.629101,-0.738775 51.629134,-0.738672 51.629116,-0.738647 51.629050,-0.738214 51.628992,-0.738203 51.629024,-0.737929 51.628974,-0.737857 51.629102,-0.737591 51.629052,-0.737771 51.628802,-0.737623 51.628765,-0.737382 51.629010,-0.737294 51.628966,-0.737371 51.628891,-0.737327 51.628859,-0.737495 51.628709,-0.737182 51.628586,-0.737401 51.628474,-0.736379 51.628343,-0.736445 51.628182,-0.736602 51.628208,-0.736737 51.627901,-0.737960 51.628071,-0.737919 51.628165,-0.738679 51.628318,-0.738849 51.627921,-0.739516 51.628043,-0.740487 51.628309)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:BUC</td> 
-                    <td>Valley Business Centre</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>development-policy-area:LPVBC</td> 
+                <td>Valley Business Centre</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>
