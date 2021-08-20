@@ -158,6 +158,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-area/local-authority-eng/BUC/NSABBR</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                development-policy-area:NSABBR            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BUC" class="govuk-link">Buckinghamshire Council</a>
@@ -167,10 +171,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                Site Allocation of land at Boxer Road/Barn Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                development-policy-area:NSABBR            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -183,20 +183,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -214,9 +212,9 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>geometry</th>
+            <th>organisation</th>
+            <th>name</th>
             <th>geography</th>
         </tr>
     </thead>
@@ -224,8 +222,6 @@ crossorigin="" />
             <td>2021-01-08</td>
             <td><a href="https://github.com/digital-land/development-policy-area-collection/tree/main/transformed/development-policy-area/6d624bc688118d70d5ecbc41403c66b5bdb49d8ccd9f75411c4f7a6f287cf409.csv#L9">6d624bc68811...</a></td>
             <td>8</td>
-                <td>Site Allocation of land at Boxer Road/Barn Road</td> 
-                <td>local-authority-eng:BUC</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -238,6 +234,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>local-authority-eng:BUC</td> 
+                <td>Site Allocation of land at Boxer Road/Barn Road</td> 
                 <td>development-policy-area:NSABBR</td> 
         </tr>    </tbody>
 </table>
