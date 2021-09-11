@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title> | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+</div>
+    </div>
+  </div>
+</header>
+
+      <div class="govuk-width-container ">
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div><div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../">Development Policy Area</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">BUC</li>
+  </ol>
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 id="index-title" class="govuk-heading-xl"></h1>
+ 
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="dlf-feedback dlf-feedback--stacked dlf-feedback--flush">
+    <div class="dlf-feedback__prompt">
+        <div class="dlf-feedback__prompt-content">
+            <span class="dlf-feedback__prompt-content__text">Have you spotted any issues with the data?</span>
+        </div>
+        <div class="dlf-feedback__prompt-action">
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on  data" class="govuk-button dlf-feedback__prompt__link">Provide feedback</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+               
+
+    <form class="filter-organisations-list__form govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+
+
+        <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">109</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">109</span>
+                    records listed.
+                </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
+            </div>
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPBAK" data-filter="match-content">development-policy-area:LPBAK</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Baker Street</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPBE1" data-filter="match-content">development-policy-area:LPBE1</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Slate Meadow</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPBE2" data-filter="match-content">development-policy-area:LPBE2</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hollands Farm</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPBEL" data-filter="match-content">development-policy-area:LPBEL</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bellfield Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21A" data-filter="match-content">development-policy-area:LPD21A</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Edie Pusey House 9A Amersham Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21B" data-filter="match-content">development-policy-area:LPD21B</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Delafield Heights South (Longland Way / Pettifer Way (South)) HW</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21C" data-filter="match-content">development-policy-area:LPD21C</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Frank Hudson Furniture Factory Rosebery Avenue High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21D" data-filter="match-content">development-policy-area:LPD21D</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Notcutts Garden Centre Clay Lane High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21E" data-filter="match-content">development-policy-area:LPD21E</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Delafield Heights North (Longland Way / Pettifer Way (North)) High Wyc</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21F" data-filter="match-content">development-policy-area:LPD21F</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">27 High Street High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21G" data-filter="match-content">development-policy-area:LPD21G</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coal Yard Smalldean Lane Saunderton</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21H" data-filter="match-content">development-policy-area:LPD21H</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Windrush House Bourne End</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21I" data-filter="match-content">development-policy-area:LPD21I</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Dashwood Avenue High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21J" data-filter="match-content">development-policy-area:LPD21J</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">34 Dashwood Avenue High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21K" data-filter="match-content">development-policy-area:LPD21K</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ogilvie Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21L" data-filter="match-content">development-policy-area:LPD21L</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land to the rear of Quebec Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21M" data-filter="match-content">development-policy-area:LPD21M</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Netley Works 89 Queens Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21N" data-filter="match-content">development-policy-area:LPD21N</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Garages between Chiltern Avenue and Rutland Avenue High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21O" data-filter="match-content">development-policy-area:LPD21O</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Garages at Tyzack Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21P" data-filter="match-content">development-policy-area:LPD21P</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Garages at Havenfield Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21Q" data-filter="match-content">development-policy-area:LPD21Q</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">1-9 Shaftesbury Street High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21R" data-filter="match-content">development-policy-area:LPD21R</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Foxes Piece Marlow Buckinghamshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21S" data-filter="match-content">development-policy-area:LPD21S</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Westside Fruit / The Apple Orchard Clay Lane High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21T" data-filter="match-content">development-policy-area:LPD21T</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Westhorpe House Westhorpe Park Little Marlow</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21U" data-filter="match-content">development-policy-area:LPD21U</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sunnyside and St Johns House 16-18 St Johns Road High Wycombe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21V" data-filter="match-content">development-policy-area:LPD21V</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land of Amersham Road incl. Tralee Farm</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPD21W" data-filter="match-content">development-policy-area:LPD21W</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Princes Risborough Main Expansion Area</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPDAW" data-filter="match-content">development-policy-area:LPDAW</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Daws Hill Employment Area</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPDPR" data-filter="match-content">development-policy-area:LPDPR</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Desborough Park Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEM7" data-filter="match-content">development-policy-area:LPEM7</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Globe Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEM10" data-filter="match-content">development-policy-area:LPEM10</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land rear of Stokenchurch Business Centre</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEM15" data-filter="match-content">development-policy-area:LPEM15</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wycombe Air Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEM17" data-filter="match-content">development-policy-area:LPEM17</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cressex Business Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMB" data-filter="match-content">development-policy-area:LPEMB</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Millboard Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMC" data-filter="match-content">development-policy-area:LPEMC</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cores End Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMG" data-filter="match-content">development-policy-area:LPEMG</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Glory Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMH" data-filter="match-content">development-policy-area:LPEMH</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Heights Stokenchurch</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMI" data-filter="match-content">development-policy-area:LPEMI</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sands Industrial Estate</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMJ" data-filter="match-content">development-policy-area:LPEMJ</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Johnson and Johnson</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMK" data-filter="match-content">development-policy-area:LPEMK</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kingmead Business Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMM" data-filter="match-content">development-policy-area:LPEMM</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Marlow International</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMP" data-filter="match-content">development-policy-area:LPEMP</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Peregrine Business Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPEMS" data-filter="match-content">development-policy-area:LPEMS</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Soho Mills Industrial Estate / Wooburn Industrial Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPGFT" data-filter="match-content">development-policy-area:LPGFT</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Grafton Street</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPGOM" data-filter="match-content">development-policy-area:LPGOM</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Gomm Road / Tannery Road Industrial Estate</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHH" data-filter="match-content">development-policy-area:LPHH</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land adjoining High Heavens</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHL" data-filter="match-content">development-policy-area:LPHL</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Holtspur Lane</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHS2" data-filter="match-content">development-policy-area:LPHS2</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">HS2 Safeguarded Land</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHUG" data-filter="match-content">development-policy-area:LPHUG</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hughenden Avenue</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW" data-filter="match-content">development-policy-area:LPHW</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">High Wycombe Business Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW4" data-filter="match-content">development-policy-area:LPHW4</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Abbey Barn North</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW5" data-filter="match-content">development-policy-area:LPHW5</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Abbey Barn South and Wycombe Summit</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW6" data-filter="match-content">development-policy-area:LPHW6</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Gomm Valley and Ashwells</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW7" data-filter="match-content">development-policy-area:LPHW7</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Terriers Farm and Terriers House</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW9" data-filter="match-content">development-policy-area:LPHW9</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Part of Greens Farm Glynswood</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW10" data-filter="match-content">development-policy-area:LPHW10</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Horns Lane</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW11" data-filter="match-content">development-policy-area:LPHW11</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clay Lane</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW12" data-filter="match-content">development-policy-area:LPHW12</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leigh Street</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW13" data-filter="match-content">development-policy-area:LPHW13</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Bassetsbury Allotments</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW14" data-filter="match-content">development-policy-area:LPHW14</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Highbury Works / Hazlemere Coach Works</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPHW18" data-filter="match-content">development-policy-area:LPHW18</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Office Outlet site</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPKCH" data-filter="match-content">development-policy-area:LPKCH</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kitchener Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPKNV" data-filter="match-content">development-policy-area:LPKNV</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Knaves Beech Way</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPLE" data-filter="match-content">development-policy-area:LPLE</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lane End Industrial Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPLGH" data-filter="match-content">development-policy-area:LPLGH</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leigh Street</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPLIW" data-filter="match-content">development-policy-area:LPLIW</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land north of Lower Icknield Way</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPLMCP" data-filter="match-content">development-policy-area:LPLMCP</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Marlow Country Park</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPLON" data-filter="match-content">development-policy-area:LPLON</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London Road Employment Area</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPMARL" data-filter="match-content">development-policy-area:LPMARL</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Marlborough Industrial Estate</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPMB" data-filter="match-content">development-policy-area:LPMB</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Meadow Bank</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPMILL" data-filter="match-content">development-policy-area:LPMILL</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mill End Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPMOL" data-filter="match-content">development-policy-area:LPMOL</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Molins Sports Ground</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPMR6" data-filter="match-content">development-policy-area:LPMR6</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Seymour Court Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPPR11" data-filter="match-content">development-policy-area:LPPR11</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land rear of Poppy Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPPR13" data-filter="match-content">development-policy-area:LPPR13</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land Fronting New Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPPR14" data-filter="match-content">development-policy-area:LPPR14</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land South of Horns Lane</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPPR16" data-filter="match-content">development-policy-area:LPPR16</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Princes Risborough Station</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPPRA" data-filter="match-content">development-policy-area:LPPRA</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Princes Risborough to Aylesbury Safeguarded Land</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPQUC" data-filter="match-content">development-policy-area:LPQUC</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Queensway</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR1" data-filter="match-content">development-policy-area:LPRUR1</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land south of Finings Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR2" data-filter="match-content">development-policy-area:LPRUR2</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land between Chalky Field and Marlow Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR3" data-filter="match-content">development-policy-area:LPRUR3</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Sidney House</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR7" data-filter="match-content">development-policy-area:LPRUR7</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land off Clappins Lane</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR8" data-filter="match-content">development-policy-area:LPRUR8</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land south of Mill Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR9" data-filter="match-content">development-policy-area:LPRUR9</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Wood Farm</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR11" data-filter="match-content">development-policy-area:LPRUR11</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Heavens Above</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPRUR12" data-filter="match-content">development-policy-area:LPRUR12</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Uplands Conference Centre</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPSTA" data-filter="match-content">development-policy-area:LPSTA</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Station Road Loudwater</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPVBC" data-filter="match-content">development-policy-area:LPVBC</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Valley Business Centre</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPWSX" data-filter="match-content">development-policy-area:LPWSX</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wessex Road Industrial Estate</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./LPWYE" data-filter="match-content">development-policy-area:LPWYE</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wye Industrial Estate</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NBSB" data-filter="match-content">development-policy-area:NBSB</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bledlow Settlement Boundary</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NDHNA" data-filter="match-content">development-policy-area:NDHNA</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Daws Hill Neighbourhood Area</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NDLV" data-filter="match-content">development-policy-area:NDLV</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development at Longwick Village</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NLGSD" data-filter="match-content">development-policy-area:NLGSD</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Local Green Space 4 - land near junction of Fair Ridge and Foxleigh</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NNHA" data-filter="match-content">development-policy-area:NNHA</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">New Housing Allocations</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NPP1" data-filter="match-content">development-policy-area:NPP1</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South Saunderton Settlement Boundary</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NPP3" data-filter="match-content">development-policy-area:NPP3</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Molins, South Saunderton</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NPP12" data-filter="match-content">development-policy-area:NPP12</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bledlow Ridge School</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NRLVDRI" data-filter="match-content">development-policy-area:NRLVDRI</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Retaining Longwick Village&#39;s Distinct Rural Identity</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSAAF" data-filter="match-content">development-policy-area:NSAAF</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site Allocation of land adjacent to Anderdons Farm</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSABBR" data-filter="match-content">development-policy-area:NSABBR</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site Allocation of land at Boxer Road/Barn Road</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSARF" data-filter="match-content">development-policy-area:NSARF</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site Allocation of land @ Rose Farm frontage &amp; South</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSARHF" data-filter="match-content">development-policy-area:NSARHF</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site Allocation of land adjacent to Red House Farm</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSATR" data-filter="match-content">development-policy-area:NSATR</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site Allocation on east side of Thame Road to Bar Lane</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSATRCW" data-filter="match-content">development-policy-area:NSATRCW</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site Allocation of land on Thame Road east Chestnut Way junction</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSMPH" data-filter="match-content">development-policy-area:NSMPH</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Shoulder of Mutton Public House</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./NSSBS" data-filter="match-content">development-policy-area:NSSBS</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Small Scale Business Space</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./W23" data-filter="match-content">development-policy-area:W23</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">MARLOW BOTTOM - Green Space</p>
+  </td>
+</tr></tbody>
+</table>
+
+        </div>
+
+
+        </main>
+      </div>
+
+<div class="dl-sticky-banner__container" data-module="sticky-banner">
+    <div class="dl-sticky-banner">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+<a href="#index-title" class="govuk-link govuk-link--no-visited-state back-to-top__link">
+    <svg role="presentation" focusable="false" class="back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+        <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>Back to top
+</a>            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="govuk-footer " role="contentinfo"
+>
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+              </ul>
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+
+
+
+    <script>
+        const $bttBanner = document.querySelector('[data-module="sticky-banner"]')
+        const bttComponent = new DLFrontend.BackToTop($bttBanner).init({
+            endElementSelector: '.govuk-footer',
+            startElementSelector: '#index-title',
+            fixClass: 'dl-sticky-banner--fixed'
+        })
+    </script>
+
+
+        <script>
+        // initialise list filter
+        const $form = document.querySelector('[data-filter="form"]');
+        new window.DLFrontend.FilterList($form).init({
+            list_section_selector: '.index-list-wrapper',
+            count_wrapper_selector: '.count-wrapper'
+        })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
+        </script>
+
+  </body>
+</html>
